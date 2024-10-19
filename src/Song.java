@@ -38,24 +38,58 @@ public class Song
   }
   
   // Getters for getting private instance variables
-  public String getTitle()
-  {
-    return trackName;
-  }
-  
-  public String getArtist()
+  public String getArtistName()
   {
     return artistName;
   }
-  
-  // Setters to update instance variables
-  public void setTitle(String trackName)
+
+  public String getTrackName()
   {
-      this.trackName = trackName;
+    return trackName;
   }
-  
-  public void setArtist(String artistName)
+
+  public Integer getReleaseDate()
   {
-    this.artistName = artistName;
+    return releaseDate;
+  }
+
+  public String getGenre()
+  {
+    return genre;
+  }
+
+  public Integer getLength()
+  {
+    return length;
+  }
+
+  public Double getShakeTheAudience()
+  {
+    return shakeTheAudience;
+  }
+
+  public void setShakeTheAudience(Double shakeTheAudience)
+  {
+    this.shakeTheAudience = shakeTheAudience;
+  }
+
+  public Double getObscene()
+  {
+    return obscene;
+  }
+
+  public Double getDanceability()
+  {
+    return danceability;
+  }
+
+  public Double getLoudness()
+  {
+    return loudness;
+  }
+
+  public String getTopic()
+  {
+    return topic;
   }
 }

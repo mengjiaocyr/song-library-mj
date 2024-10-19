@@ -23,7 +23,7 @@ public class SongImporter
             while (csv.hasNextLine()) {
                 if (lineNumber > 30)
                 {
-                    break;
+                    //break;
                 }
 
                 lineNumber++; // Keep track of line numbers to make inspection of data errors simpler.
