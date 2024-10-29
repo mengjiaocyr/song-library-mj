@@ -37,6 +37,7 @@ public class SongImporter
                 String artistName = fields[0];
                 String trackName = fields[1];
                 Integer releaseDate = Integer.parseInt(fields[2]);
+                // int releaseDate = Integer.parseInt(fields[2]); or you can use int instead of Integer.
                 String genre = fields[3];
                 Integer length = Integer.parseInt(fields[4]);
                 Double shakeTheAudience = Double.parseDouble(fields[5]);
@@ -51,7 +52,7 @@ public class SongImporter
                 // Replace the next line with your song constructor
                 Song song = new Song(artistName, trackName, releaseDate, genre, length, shakeTheAudience, obscene, danceability, loudness, topic); // code to construct a song object
 
-                // Add the song object to the data output.
+                // Add the song object to the data output to array.
                 songs.add(song);
             }
             csv.close();

@@ -10,11 +10,17 @@ public class App {
         int totalNumberOfSongsFrom1982 = 0;
         int totalNumberOfSongsFrom1998 = 0;
         int totalNumberOfSongsFrom2011 = 0;
+        // Don't directly store the max lenght as an integer
+        // Instead store the entire song that has the current max length.
+        // This way we don't have multiple variables in this context, they are all packaged together into the Song. 
         Song maxLength = new Song();
         Song minShake = new Song();
+        // Initialize the starting value to be larger than any expected input. 
         minShake.setShakeTheAudience(1.0); 
         Song loudest = new Song();
 
+        // Creating an average class keeps this logic clean.
+        // Otherwise would have: int obscene1950sCount, double obscene1950s...
         Average obscene1950s = new Average();
         Average obscene1960s = new Average();
         Average obscene1970s = new Average();
